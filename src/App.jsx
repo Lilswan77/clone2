@@ -1,14 +1,22 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./Components/Home";
+import Docs from "./Components/Docs";
 
 const App = () => {
   return (
-    <div>
+    <div className="bg-[#131416] h-screen">
       <BrowserRouter>
-      
+        <nav className="justify-center pt-5 gap-x-8 flex">
+          <Link className="text-white" to="/">Home</Link>
+          <Link className="text-white" to="/docs">Docs</Link>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/docs" element={<Docs />} />
+        </Routes>
       </BrowserRouter>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
