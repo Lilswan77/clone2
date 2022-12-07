@@ -6,11 +6,12 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        '3xl': '0 0px 100px 0px rgba(0, 0, 0, 0.3)',
+        '3xl': '0 0px 25px 0px',
       },
       fontFamily: {
         Secular: ['Secular One'],
-        Urbanist: ['Urbanist '],
+        Urbanist: ['Urbanist'],
+        Poppins: ['Poppins'],
       }
     },
   },
