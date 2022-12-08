@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        '3xl': '0 0px 25px 0px',
+        '3xl': '0 0px 10px 1px',
       },
       fontFamily: {
         Secular: ['Secular One'],
